@@ -1,0 +1,415 @@
+@import "null.css";
+.car {
+	background-color: aliceblue;
+}
+.car_center {
+	max-width: 1200px;
+	margin: 0px auto;
+	height: 500px;
+	position: relative;
+}
+/* ============================================================Ебаные колеса==================================================================== */
+.wheel {
+	background-color: rgb(57, 57, 57);
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	z-index: 10;
+	border-radius: 50%;
+}
+.wheel_first{
+	bottom: 0px;
+	left: 300px;
+}
+.wheel_second{
+	bottom: 0px;
+	left: 800px;
+}
+.wheel__disc {
+	background-color: rgb(244, 244, 244);
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%);
+}
+.wheel__holes {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 5;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%);
+	overflow: hidden;
+}
+.wheel__hole{
+	width: 80px;
+	height: 80px;
+	transform-origin: top left;
+	background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	overflow: hidden;
+	border: 1px solid #000;
+}
+.wheel__hole_1 {
+transform: rotate(45deg) skew(65deg);
+}
+.wheel__hole_2 {
+	transform: rotate(90deg) skew(65deg);
+}
+.wheel__hole_3 {
+	transform: rotate(135deg) skew(65deg);
+}
+.wheel__hole_4 {
+	transform: rotate(180deg) skew(65deg);
+}
+.wheel__hole_5 {
+	transform: rotate(225deg) skew(65deg);
+}
+.wheel__hole_6 {
+	transform: rotate(270deg) skew(65deg);
+}
+.wheel__hole_7 {
+	transform: rotate(315deg) skew(65deg);
+}
+.wheel__hole_8 {
+	transform: rotate(0deg) skew(65deg);
+}
+.wheel__label {
+	background-color: rgb(255, 255, 255);
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 5;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%);
+	border: 1px solid #000;
+}
+.wheel__brakes-disc {
+	background-color: rgb(213, 213, 213);
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 6;
+	top: 0px;
+	right: 0px;
+	transform: translate(-15%, -50%) rotate(8deg) skew(303deg);
+	transform-origin: 0px 0px;
+}
+.wheel__brake{
+	background-color: rgb(141, 23, 23);
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 6;
+	top: 0px;
+	right: 0px;
+	transform: translate(0%, -50%) rotate(8deg) skew(303deg);
+	transform-origin: 0px 0px;
+}
+/* ==============================================================Обвесы======================================================================== */
+.ark{
+	background-color: #000;
+	width: 140px;
+	height: 120px;
+	border-radius: 50% 50% 0px 0px;
+	position: absolute;
+	z-index: 9;
+	bottom: 10px;
+}
+.ark_front{
+	left: 290px;
+}
+.ark_back{
+	left: 790px;
+}
+.bumper {
+	height: 50px;
+	width: 200px;
+	background-color: rgb(234, 234, 96);
+	border: 1px solid #000;
+	border-radius: 50px 20px 0px 0px / 150px 150px 0px 0px;
+	position: absolute;
+	z-index: 10;
+	bottom: 10px;
+}
+.bumper_front {
+	left: 96px;
+}
+.bumper_back {
+	width: 120px;
+	border-radius: 0px 10px 40px 0px;
+	bottom: 10px;
+	left: 930px;
+}
+.car-body{
+	background-color: rgb(234, 234, 96);
+}
+.car-body_ark{
+	width: 210px;
+	height: 130px;
+	border-top: 1px solid #000;
+	border-radius: 50% 50% 0px 0px;
+	transform: rotate(-15deg);
+	position: absolute;
+	z-index: 8;
+	left: 240px;
+	bottom: 35px;
+}
+.car-body_ark_back{
+	width: 170px;
+	height: 130px;
+	border-top: 1px solid #000;
+	border-radius: 50% 50% 0px 0px;
+	position: absolute;
+	z-index: 8;
+	left: 775px;
+	bottom: 35px;
+}
+.car-body_kants{
+	background-color: rgba(0, 0, 0, 0);
+	position: absolute;
+	z-index: 9;
+	left: 425px;
+	bottom: 7px;
+	perspective: 400px;
+	perspective-origin: center;
+	font-size: 0px;
+}
+.car-body_kant {
+	transform: rotateX(36deg);
+	width: 250px;
+	height: 35px;
+	border: 1px solid #000;
+	display: inline-block;
+}
+.car-body_kant_back {
+	transform: rotateX(36deg);
+	width: 121px;
+	height: 35px;
+	border: 1px solid #000;
+	display: inline-block;
+}
+.car-body_bonnet{
+	width: 350px;
+	height: 100px;
+	border-radius: 5px 0px 0px 0px;
+	border-top: 1px solid #000;
+	border-left: 1px solid #000;
+	transform: rotate(-10deg);
+	position: absolute;
+	z-index: 7;
+	left: 122px;
+	bottom: 40px;
+}
+.car-body_block_1{
+	width: 600px;
+	height: 120px;
+	position: absolute;
+	z-index: 7;
+	left: 295px;
+	bottom: 30px;
+}
+.car-body_block_2{
+	width: 200px;
+	height: 120px;
+	transform: rotate(10deg);
+	border-radius: 0px 10px 0px 0px;
+	border-top: 1px solid #000;
+	border-right: 1px solid #000;
+	position: absolute;
+	z-index: 7;
+	left: 835px;
+	bottom: 30px;
+	overflow: hidden;
+}
+.light-back {
+	background-color: rgb(200, 51, 51);
+	height: 40px;
+	width: 30px;
+	border-radius: 5px;
+	border: 1px solid #000;
+}
+.light-back_place {
+	position: absolute;
+	top: 15px;
+	right: -15px;
+}
+.light-back__sphere {
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	border: 1px solid #000;
+	background-color: orange;
+}
+.light-back__sphere_1 {
+	position: absolute;
+	top: 5px;
+	left: 3px;
+}
+.light-back__sphere_2 {
+	position: absolute;
+	bottom: 5px;
+	left: 3px;
+}
+.car-body_block_3{
+	width: 200px;
+	height: 120px;
+	transform: rotate(-20deg);
+	border-top: 1px solid #000;
+	position: absolute;
+	z-index: 7;
+	left: 438px;
+	bottom: 81px;
+}
+.car-body_block_4 {
+	width: 190px;
+	height: 100px;
+	border-top: 1px solid #000;
+	position: absolute;
+	z-index: 7;
+	left: 611px;
+	bottom: 132px;
+}
+.car-body_block_5 {
+	width: 175px;
+	height: 100px;
+	border-top: 1px solid #000;
+	transform: rotate(30deg);
+	position: absolute;
+	z-index: 7;
+	left: 765px;
+	bottom: 95px;
+}
+.car-body_block_6{
+border-radius: 175px 0px 309px 47px / 150px 136px 141px 23px;
+width: 75px;
+height: 40px;
+border: 1px solid #000;
+transform: rotate(-5deg);
+position: absolute;
+z-index: 8;
+left: 980px;
+bottom: 135px;
+}
+.car-body_block_7{
+	width: 30px;
+	height: 63px;
+	border-radius: 10px 0px 0px 0px;
+	border-top: 1px solid #000;
+	border-left: 1px solid #000;
+	position: absolute;
+	bottom: 39px;
+	left: 733px;
+	z-index: 10;
+	background-color: rgba(0, 0, 0, 0);
+	transform: skew(-20deg);
+}
+.door{
+}
+.door_place{
+	width: 300px;
+	height: 185px;
+	position: absolute;
+	left: 455px;
+	top: 282px;
+}
+.door__line {
+	width: 1px;
+	background-color: #000;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	transform-origin: top right;
+}
+.door__line_1 {
+height: 196px;
+transform: rotate(24deg);
+position: absolute;
+z-index: 9;
+}
+.door__line_2 {
+	height: 154px;
+	transform: rotate(-10deg);
+	position: absolute;
+	z-index: 9;
+	top: 55px;
+	left: 0px;
+}
+.door__line_3 {
+	height: 161px;
+	transform: rotate(70deg);
+	position: absolute;
+	z-index: 9;
+	top: 0px;
+	left: 150px;
+}
+.door__line_4 {
+	height: 148px;
+	transform: rotate(90deg);
+	position: absolute;
+	z-index: 9;
+	top: 0px;
+	left: 299px;
+}
+.door__line_5 {
+background-color: rgb(85, 85, 85);
+height: 10px;
+width: 50px;
+border: 1px solid #000;
+border-radius: 0px 0px 10px 10px;
+position: absolute;
+z-index: 10;
+top: 75px;
+left: 195px;
+}
+.window{
+	width: 270px;
+	height: 105px;
+	position: absolute;
+	z-index: 10;
+	top: 8px;
+	left: 33px;
+	overflow: hidden;
+	transform: rotate(340deg);
+}
+.glass{
+	width: 335px;
+	height: 40px;
+	background: radial-gradient(circle, rgba(255,255,255,1) 19%, rgba(0,189,193,1) 100%, rgba(0,189,193,1) 100%);
+	transform: skew(-35deg, -5deg) translate(-52px, -7px) rotate(20deg);
+}
+.light-front{
+	position: absolute;
+	left: 145px;
+	bottom: 80px;
+	z-index: 1;
+	transform: rotate(10deg);
+}
+.light-front__top {
+	height: 5px;
+	width: 120px;
+	background-color: rgb(234, 234, 96);
+	border: 1px solid #000;
+	border-radius: 2px;
+	position: relative;
+	z-index: 3;
+}
+.light-front__body {
+	height: 50px;
+	width: 100px;
+	position: relative;
+	left: 10px;
+	background-color: rgb(85, 85, 85);
+	transform: skew(10deg);
+}
